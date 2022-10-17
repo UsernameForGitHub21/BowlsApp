@@ -1,4 +1,4 @@
-# BowlsAppColby Morgan 0764405
+Colby Morgan 0764405
 October 13, 2022
 WEB452 - DEVELOP APPS IN ASP.NET
 
@@ -11,7 +11,6 @@ October 13
 Now that i have finished my midterm for my javascript and i can give my full undivided attention to it, I think it is a good time
 to make a final version of this type of project for the assignment detailed in class.
 
-PART 1: Setting up the repository and creating the app.
 
 4:10
 Set up my GitHub reposit:
@@ -27,9 +26,8 @@ Now on a new computer I began my project and saved it to a folder called BowlsAp
 After struggling for a bit trying to find where to change the address to not include https:// allowing me to run it on the school computer i've decided to do as much as I can for
 now until I can fix that issue.
 
-Part 2: Adding the controller
 4:35
-Created the HelloWorld Controller, if needed I will rename at a later date
+Created the HelloWorld Controller and added the content
 
 4:40
 Changed the contents of the controller's welcome method
@@ -46,22 +44,20 @@ if I get much further and have to restart then I could lose a lot of time. I rea
 I will continue to look for a solution.
 
 4:49
-After reverting my chnage to how it previously was my code will not even build successfully, I suppose I will have to restart.
+I found a URL in the settings and removed the HTTP:// but this only broke my code.
+After reverting my change to how it previously was my code will not even build successfully, I suppose I will have to restart.
 
-5:06
-By some stroke of luck I managed to figure out what the problem is, I think anyways, my previous solution was very close, I had to leave the url as was and deselect the SSL option
+5:10
+After rebuilding the project,
+with some great luck I managed to figure out what the problem is, I think anyways, my previous solution was very close, I had to leave the url as was and deselect the SSL option
 from below it, now I am able to open my app and it is time to remake a controller.
 
-5:12
-I've redone the first part of the controller and tested, I am able to reach both enpoints I've created.
-
-5:16
-I've ran and tested the second version.
+5:14
+I've redone the first part of the controller and tested, I am able to reach both endpoints I've created.
 
 5:17
-I've tested and ran the final version of the controller.Now I can finally add the veiw.
+I've tested and ran the final version of the controller. Now I can finally add the veiw.
 
-Part 3: Adding the view
 
 5:19
 I've changed the Index method to return view.
@@ -89,7 +85,6 @@ finally after that I tested ending part 3
 5:42
 Although I am in a flow and I am happy with the progress I am making, I have a class to get to so I will resume this after if I am able to
 
-Part 4: Adding a Model
 7:12
 Done with my other class, now back to this assignment
 
@@ -125,7 +120,7 @@ after asking for permission, I am at my computer and uploading it to the GitHib 
 I've returned to the lab, now to see if I can fix the eroor I was having yesterday
 
 11:35
-I've tried every solution and tab I thought might help and I treid looking over the lecture files as well as using google to try and help but
+I've tried every solution and tab I thought might help and I tried looking over the lecture files as well as using google to try and help but
 unfortunately with no success, I will ask for help solving this issue in class today.
 
 11:55
@@ -141,11 +136,36 @@ allowing me to progres my project.
 
 12:37
 Now frustratingly although the rest of my code shows no errors and I've added in the code that was commented before as well as corrected all those errors,
-I am having an error that will no allow me to add my scaffold, it states that there is no parameterless constructor defined for the type BowlsApp.Data.BowlsContext
+I am having an error that will not allow me to add my scaffold, it states that there is no parameterless constructor defined for the type BowlsApp.Data.BowlsContext
 I see no issue with that file. For now I suppose I will skip this step hoping that I can get help or lucky again
 
 1:27
-Andrew did something, he said he does not know what, but everythign seems to be working
+Andrew did something, he said he does not know what, but everything seems to be working, so I'm very happy.
 
 1:31
 I've tested everything around the code so far and everythings looking good, now i will continue with the tutorial
+
+2:00
+A small break for lunch then back to work
+
+3:53
+I'm having an error where the table has the rating column, but nothing appears in it.
+
+4:35
+I have completed the next part in the tutorial, adding a rating to my page but for some reason the text isn't appearing on my page, I have another class soon so I will have
+to fix the error and finish this up after class
+
+5:50
+My other class was very short but that gives me more time to work on this assignment
+
+6:17
+I'm not sure how but changing the text of the rating has suddenly allowed it to work, now to finish up the rest of the tutorial
+
+6:32
+I have completed the tutorial but now there is an issue where upon edidting an entry, it says that the URL cannot be found, I have went over the work I've just
+done 2 or 3 times but cannot find what is wrong, I will have to seek out help for this one. For now I'll see if I can figure out how to customize the styles
+
+6:55
+After trying to edit the site.css file and seeing no changes, I will have to put more time into figuring out which file needs to be edited. For now it is starting
+to get dark so I will go home for the evening, overall I am happy with the progress I have made today.
+
