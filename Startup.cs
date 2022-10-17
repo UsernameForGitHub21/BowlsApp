@@ -8,10 +8,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using BowlsApp.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace BowlsApp
 {
-    public class Startup
+    public class Startup//test
     {
         public Startup(IConfiguration configuration)
         {
@@ -24,6 +26,9 @@ namespace BowlsApp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<BowlsAppContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("BowlsAppContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
