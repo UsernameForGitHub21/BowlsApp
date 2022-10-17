@@ -36,7 +36,7 @@ namespace BowlsApp.Models
                     {
                         Title = "Mixing Bowl",
                         ReleaseDate = DateTime.Parse("2022-1-12"),
-                        Genre = "Cooking",
+                        Genre = "Mixing",
                         Rating = "3/5",
                         Price = 10.99M
                     },
