@@ -2,10 +2,9 @@ Colby Morgan 0764405
 October 13, 2022
 WEB452 - DEVELOP APPS IN ASP.NET
 
-*NOTES TO REMEMBER*
-Project Name: MvcMovie = BowlsApp
-Movie App = Bowl Buyer App
-Movie = Bowl
+*** I had an issue getting the edit function to work on my website
+upon filling out the form and submitting it, the project has an error code 404, localhost page cannot be found.
+After a lot of time and trying to change several areas of my assignment I was still unable to resolve this issue***
 
 October 13
 Now that i have finished my midterm for my javascript and i can give my full undivided attention to it, I think it is a good time
@@ -169,3 +168,10 @@ done 2 or 3 times but cannot find what is wrong, I will have to seek out help fo
 After trying to edit the site.css file and seeing no changes, I will have to put more time into figuring out which file needs to be edited. For now it is starting
 to get dark so I will go home for the evening, overall I am happy with the progress I have made today.
 
+October 17, 2022
+
+12:40
+After getting the project working on this computer, I just have a couple of small changes to make before I can submit
+
+12:56
+added color and a font, these aren't working but from what I've been told I am editing the correct file
