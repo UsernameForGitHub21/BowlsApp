@@ -20,9 +20,33 @@ namespace BowlsApp.Controllers
         }
 
         // GET: Bowls
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(string bowlGenre, string searchString)
         {
-            return View(await _context.Bowl.ToListAsync());
+            // Use LINQ to get list of genres.
+            IQueryable<string> genreQuery = from m in _context.Bowl
+                                            orderby m.Genre
+                                            select m.Genre;
+
+            var bowls = from m in _context.Bowl
+                         select m;
+
+            if (!string.IsNullOrEmpty(searchString))
+            {
+                bowls = bowls.Where(s => s.Title.Contains(searchString));
+            }
+
+            if (!string.IsNullOrEmpty(bowlGenre))
+            {
+                bowls = bowls.Where(x => x.Genre == bowlGenre);
+            }
+
+            var bowlGenreVM = new BowlGenreViewModel
+            {
+                Genres = new SelectList(await genreQuery.Distinct().ToListAsync()),
+                Bowls = await bowls.ToListAsync()
+            };
+
+            return View(bowlGenreVM);
         }
 
         // GET: Bowls/Details/5
@@ -54,7 +78,7 @@ namespace BowlsApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Title,ReleaseDate,Genre,Price")] Bowl bowl)
+        public async Task<IActionResult> Create([Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Bowl bowl)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +110,7 @@ namespace BowlsApp.Controllers
         // more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Title,ReleaseDate,Genre,Price")] Bowl bowl)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Title,ReleaseDate,Genre,Price,Rating")] Bowl bowl)
         {
             if (id != bowl.ID)
             {

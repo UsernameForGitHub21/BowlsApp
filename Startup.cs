@@ -13,7 +13,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace BowlsApp
 {
-    public class Startup
+    public class Startup//test
     {
         public Startup(IConfiguration configuration)
         {
